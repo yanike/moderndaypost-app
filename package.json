@@ -17,6 +17,10 @@
     "name": "Yanike Mann",
     "email": "support@moderndaypost.com"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yanike/moderndaypost-app.git"
+  },
   "homepage": "https://www.moderndaypost.com",
   "devDependencies": {
     "electron": "^2.0.1"
