@@ -1,0 +1,24 @@
+{
+  "name": "modern-day-post",
+  "productName": "Modern-Day Post",
+  "version": "1.0.0",
+  "description": "Open news source for everyone",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "keywords": [
+    "flatpak",
+    "electron",
+    "moderndaypost"
+  ],
+  "author": {
+    "name": "Yanike Mann",
+    "email": "support@moderndaypost.com"
+  },
+  "homepage": "https://www.moderndaypost.com",
+  "devDependencies": {
+    "electron": "^2.0.1"
+  }
+}

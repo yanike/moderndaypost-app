@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Modern-Day Post</title>
+  <link rel="stylesheet" href="bulma-0.8.2/css/bulma.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <!--
+    <div class="field has-addons">
+      <div class="control is-expanded">
+        <input id="search_box" class="input" type="text" placeholder="Search for anything">
+      </div>
+      <div class="control">
+        <a id="search_button" class="button is-danger">
+          Search
+        </a>
+      </div>
+    </div>
+    -->
+    <div class="search_footer">
+      <a id="search_auto_button">Auto</a>
+      <a id="search_business_button">Business</a>
+      <a id="search_entertainment_button">Entertainment</a>
+      <a id="search_food_button">Food</a>
+      <a id="search_lifestyle_button">Lifestyle</a>
+      <a id="search_miscellaneous_button">Miscellaneous</a>
+      <a id="search_news_button">News</a>
+      <a id="search_sports_button">Sports</a>
+      <a id="search_tech_button">Tech</a>
+      powered by
+      <div class="search_powered_by">
+        <a id="search_mdp_button"><img src="mdp_logo.svg" style="width: 24px;"></img></a>
+      </div>
+    </div>
+    <div class="search_footer_writer">
+      Are you a writer? <a href="https://moderndaypost.com/registration/" target="_blank">Join and submit articles for free!</a>
+    </div>
+  </nav>
+  <div id="all_articles" class="all_articles"></div>
+
+  <!-- Insert this line above script imports  -->
+  <script>if (typeof module === 'object') { window.module = module; module = undefined; }</script>
+
+  <!-- normal script imports etc  -->
+  <script src="js/jquery-3.5.0.min.js"></script>
+  <script src="js/render.js"></script>
+
+  <!-- Insert this line after script imports -->
+  <script>if (window.module) module = window.module;</script>
+</body>
+
+</html>
