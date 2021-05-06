@@ -40,7 +40,7 @@ modules:
     sources:
       - type: archive
         url: https://github.com/yanike/moderndaypost-app/archive/refs/tags/MDP-R.tar.gz
-        sha256: a2feb3f1cf002a2e4e8900f718cc5c54db4ad174e48bfcfbddcd588c7b716d5b
+        sha256: 6b948aba90f2df3ff433936d4900b9ebeefef7fd50ad288016d74c5dbac3924d
         dest: main
       - generated-sources.json
       # Wrapper to launch the app
