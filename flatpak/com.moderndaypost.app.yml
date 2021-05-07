@@ -35,7 +35,7 @@ modules:
     build-options:
       env:
         # Need this for electron-download to find the cached electron binary
-        electron_config_cache: /run/build/moderndaypost-app/npm-cache
+        electron_cache: /run/build/moderndaypost-app/npm-cache
     buildsystem: simple
     sources:
       - type: archive
@@ -50,7 +50,7 @@ modules:
           - npm start --prefix=/app/main
     build-commands:
       # Install npm dependencies
-      - npm install --prefix=main --offline --cache=/run/build/moderndaypost-app/npm-cache/
+      - npm install --prefix=main --offline --cache=/run/build/moderndaypost-app/npm-cache
       # Bundle app and dependencies
       - mkdir -p /app/main /app/bin
       - cp -ra main/* /app/main/

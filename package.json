@@ -23,6 +23,6 @@
   },
   "homepage": "https://www.moderndaypost.com",
   "devDependencies": {
-    "electron": "^1.8.4"
+    "electron": "^2.0.1"
   }
 }
