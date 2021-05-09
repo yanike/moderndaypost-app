@@ -26,10 +26,7 @@ function createWindow () {
     slashes: true
   }))
 
-  // Custom Browser Window Options
-  win.removeMenu();
   win.allowRendererProcessReuse = true;
-
   win.setMenu(null)
 
   // Open the DevTools.
