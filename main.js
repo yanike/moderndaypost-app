@@ -9,7 +9,7 @@ let win
 function createWindow () {
   // Create the browser window.
   win = new BrowserWindow({
-    width: 675,
+    width: 800,
     height: 450,
     resizable: false,
     icon: __dirname + "images/icon.svg",

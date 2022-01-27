@@ -1,5 +1,5 @@
 {
-  "name": "modern-day-post-app",
+  "name": "mdp",
   "version": "1.0.0",
   "description": "Open news source for everyone",
   "main": "main.js",
@@ -17,12 +17,12 @@
     "moderndaypost"
   ],
   "author": "Yanike Mann",
-  "license": "GPL-3.0+",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/yanike/moderndaypost-app/issues"
   },
   "homepage": "https://github.com/yanike/moderndaypost-app",
-  "dependencies": {
-    "electron": "^1.8.4"
+  "devDependencies": {
+    "electron": "^16.0.7"
   }
 }

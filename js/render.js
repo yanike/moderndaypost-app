@@ -99,6 +99,12 @@ function apiCallCategory(category, count, offset) {
 				if(data){
 					buildArticles(data);
 					search.processing = false;
+
+					if(search.offset > 0){
+						search.offset = search.offset + 10;
+					} else {
+						search.offset = 10;
+					}
 				}
 			},
 			error: function (data){
@@ -127,7 +133,7 @@ function buildArticles(data) {
 		if (article.hasOwnProperty("image")){
 			var articleImage = article.image;
 		} else {
-			var newsImage = "imaes/yurjo_news_image_placeholder.jpg";
+			var newsImage = "yurjo_news_image_placeholder.jpg";
 			var articleImage = newsImage;
 		}
 
@@ -162,8 +168,6 @@ $("#all_articles").scroll(function () {
 	// Calculate the scroll top and height together to see if they match
 	// or greater than scrollHeight - 150
 	if (($("#all_articles").scrollTop() + $("#all_articles").height()) >= (document.getElementById("all_articles").scrollHeight - 150)) {
-		search.offset = search.offset + 10;
-
 		if(search.type == "search"){
 			apiCallSearch(search.term, search.count, search.offset);
 		} else if(search.type == "category") {
